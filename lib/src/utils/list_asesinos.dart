@@ -1,10 +1,8 @@
 import 'package:certamen_uno_dam/src/asesinos/model/asesinos_model.dart';
 import 'package:flutter/material.dart';
 
-List<AsesinoModel> listaAsesinos = [];
-
-List<AsesinoModel> cargarAsesinos() {
-  listaAsesinos[0] = AsesinoModel(
+List<AsesinoModel> listaAsesinos = [
+  AsesinoModel(
       nombre: 'Jonathan Wick',
       residencia: 'America',
       edad: 59,
@@ -30,8 +28,8 @@ List<AsesinoModel> cargarAsesinos() {
       ],
       genero: 'masculino',
       nacionalidad: ['Soviet', 'Belarusflag Belarusian', 'USFlag American'],
-      ocupacion: 'Professional Assassin');
-  listaAsesinos[1] = AsesinoModel(
+      ocupacion: 'Professional Assassin'),
+  AsesinoModel(
     nombre: 'Caine',
     residencia: 'Unknown',
     edad: 50,
@@ -41,8 +39,8 @@ List<AsesinoModel> cargarAsesinos() {
     genero: 'masculino',
     nacionalidad: ['Unknown'],
     ocupacion: 'Mysterious Assassin',
-  );
-  listaAsesinos[2] = AsesinoModel(
+  ),
+  AsesinoModel(
     nombre: 'Koji Shimazu',
     residencia: 'Japan',
     edad: 47,
@@ -53,8 +51,8 @@ List<AsesinoModel> cargarAsesinos() {
     genero: 'masculino',
     nacionalidad: ['Japanese'],
     ocupacion: 'Yakuza Hitman',
-  );
-  listaAsesinos[3] = AsesinoModel(
+  ),
+  AsesinoModel(
     nombre: 'Sofia Al-Azwar',
     residencia: 'Syria',
     edad: 36,
@@ -65,8 +63,8 @@ List<AsesinoModel> cargarAsesinos() {
     genero: 'femenino',
     nacionalidad: ['Syrian'],
     ocupacion: 'Mercenary',
-  );
-  listaAsesinos[4] = AsesinoModel(
+  ),
+  AsesinoModel(
     nombre: 'Cassian',
     residencia: 'Italy',
     edad: 42,
@@ -77,6 +75,5 @@ List<AsesinoModel> cargarAsesinos() {
     genero: 'masculino',
     nacionalidad: ['Italian'],
     ocupacion: 'Underworld Enforcer',
-  );
-  return listaAsesinos;
-}
+  )
+];

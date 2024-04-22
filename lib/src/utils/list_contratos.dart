@@ -26,5 +26,11 @@ List<ContratoModel> poblarListaContratos() {
       tipo: "Cerrado",
       personaObjetivo: "The Bowery King",
     ),
+    ContratoModel(
+      estado: "Finalizado",
+      monto: 20000,
+      tipo: "Cerrado",
+      personaObjetivo: "Santino D'Antonio",
+    ),
   ];
 }

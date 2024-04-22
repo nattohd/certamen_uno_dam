@@ -12,8 +12,14 @@ class AppTheme {
         useMaterial3: true,
         colorSchemeSeed: kseedColor,
         appBarTheme: AppBarTheme(
+            shadowColor: Color(0xff2D3E50),
             backgroundColor: kappBarColor,
-            titleTextStyle: TextStyle(color: kfontColor)),
+            titleTextStyle: TextStyle(
+                color: kfontColor, fontWeight: FontWeight.bold, fontSize: 22)),
+        listTileTheme: ListTileThemeData(
+            visualDensity: VisualDensity(vertical: -4),
+            contentPadding: EdgeInsets.all(1),
+            titleTextStyle: TextStyle(fontSize: 12, color: Colors.black)),
         scaffoldBackgroundColor: kbackgroundColor);
   }
 }

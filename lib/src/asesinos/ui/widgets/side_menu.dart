@@ -1,5 +1,7 @@
 import 'package:certamen_uno_dam/provider/user_provider.dart';
+import 'package:certamen_uno_dam/src/asesinos/ui/asesino_profile.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 class SideMenu extends StatefulWidget {
@@ -72,12 +74,16 @@ class _SideMenuState extends State<SideMenu> {
                       )),
                 ),
                 ListTile(
-                  onTap: () {},
+                  onTap: () {
+                    context.go('/profile');
+                  },
                   title: Text("Mi perfil"),
                   leading: Icon(Icons.person),
                 ),
                 ListTile(
-                  onTap: () {},
+                  onTap: () {
+                    context.go('/contratos');
+                  },
                   title: Text("Contratos"),
                   leading: Icon(Icons.book),
                 ),
