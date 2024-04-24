@@ -10,9 +10,7 @@ class BasePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // bool isLogged = context.watch<UserProvider>().isLogged;
-    // return isLogged == false ? LoginScreen() : AsesinoProfile();
-
-    return ContratosScreen();
+    bool isLogged = context.watch<UserProvider>().isLogged;
+    return isLogged == false ? LoginScreen() : AsesinoProfile();
   }
 }

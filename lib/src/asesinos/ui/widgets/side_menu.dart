@@ -63,11 +63,20 @@ class _SideMenuState extends State<SideMenu> {
                           InkWell(
                               onTap: () {},
                               child: Container(
-                                child: Text(
-                                  'Cambiar foto de perfil:',
-                                  style: TextStyle(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold),
+                                width: 170,
+                                child: ElevatedButton(
+                                  onPressed: () {},
+                                  child: Row(
+                                    children: [
+                                      Icon(Icons.settings),
+                                      Spacer(),
+                                      Text(
+                                        'Editar Perfil',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ))
                         ],
@@ -99,18 +108,20 @@ class _SideMenuState extends State<SideMenu> {
                     context.go('/hoteles');
                   },
                   title: Text("Hoteles"),
-                  trailing: Icon(Icons.chevron_left),
                   leading: Icon(Icons.bar_chart_rounded),
                 ),
                 ListTile(
-                  onTap: () {},
+                  onTap: () {
+                    context.go('/asesinos');
+                  },
                   title: Text("Otros asesinos"),
-                  trailing: Icon(Icons.chevron_left),
                   leading: Icon(Icons.gesture),
                 ),
                 ListTile(
-                  onTap: () async {
-                    context.read<UserProvider>().changeLogin(newState: false);
+                  onTap: () {
+                    setState(() {
+                      context.read<UserProvider>().changeLogin(newState: false);
+                    });
                   },
                   title: Text("Cerrar Sesion"),
                   leading: Icon(Icons.logout),

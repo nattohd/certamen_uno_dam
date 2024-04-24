@@ -21,8 +21,12 @@ class _AsesinoProfileState extends State<AsesinoProfile> {
     Size size = MediaQuery.of(context).size;
     AsesinoModel asesino = listaAsesinos[0];
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('Mi perfil'),
+      ),
       drawer: SideMenu(),
+      floatingActionButton:
+          FloatingActionButton(child: Icon(Icons.edit), onPressed: () {}),
       body: Container(
         height: size.height,
         width: size.width,
@@ -161,19 +165,23 @@ class ContainerSuperior extends StatelessWidget {
                   height: 200,
                   width: 200,
                   child: ClipOval(
-                    child: Image.network(fit: BoxFit.fill, asesino.imgUrl,
-                        loadingBuilder: (BuildContext context, Widget child,
-                            ImageChunkEvent? loadingProgress) {
-                      if (loadingProgress == null) return child;
-                      return Center(
-                        child: CircularProgressIndicator(
-                          value: loadingProgress.expectedTotalBytes != null
-                              ? loadingProgress.cumulativeBytesLoaded /
-                                  loadingProgress.expectedTotalBytes!
-                              : null,
-                        ),
-                      );
-                    }),
+                    // child: Image.network(fit: BoxFit.fill, asesino.imgUrl,
+                    //     loadingBuilder: (BuildContext context, Widget child,
+                    //         ImageChunkEvent? loadingProgress) {
+                    //   if (loadingProgress == null) return child;
+                    //   return Center(
+                    //     child: CircularProgressIndicator(
+                    //       value: loadingProgress.expectedTotalBytes != null
+                    //           ? loadingProgress.cumulativeBytesLoaded /
+                    //               loadingProgress.expectedTotalBytes!
+                    //           : null,
+                    //     ),
+                    //   );
+                    // }),
+                    child: Image.asset(
+                      'assets/john.jpg',
+                      fit: BoxFit.fill,
+                    ),
                   ))),
           Text(
             listaAsesinos[0].nombre,
