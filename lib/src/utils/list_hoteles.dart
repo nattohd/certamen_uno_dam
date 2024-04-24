@@ -6,12 +6,12 @@ List<HotelModel> cargarHoteles() {
     HotelModel(
       nombre: 'Continental Hotel',
       ubicacion: 'Nueva York, Estados Unidos',
-      manager: 'Winston',
+      manager: 'Winston Scott',
     ),
     HotelModel(
       nombre: 'Palace Hotel',
       ubicacion: 'Roma, Italia',
-      manager: 'Giuseppe',
+      manager: 'Julius',
     ),
     HotelModel(
       nombre: 'Grand Hotel',

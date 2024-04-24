@@ -88,12 +88,16 @@ class _SideMenuState extends State<SideMenu> {
                   leading: Icon(Icons.book),
                 ),
                 ListTile(
-                  onTap: () {},
+                  onTap: () {
+                    context.go('/servicios');
+                  },
                   title: Text("Servicios"),
                   leading: Icon(Icons.light),
                 ),
                 ListTile(
-                  onTap: () {},
+                  onTap: () {
+                    context.go('/hoteles');
+                  },
                   title: Text("Hoteles"),
                   trailing: Icon(Icons.chevron_left),
                   leading: Icon(Icons.bar_chart_rounded),
