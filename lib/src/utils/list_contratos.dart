@@ -32,5 +32,17 @@ List<ContratoModel> poblarListaContratos() {
       tipo: "Cerrado",
       personaObjetivo: "Santino D'Antonio",
     ),
+    ContratoModel(
+      estado: "Pendiente",
+      monto: 15000,
+      tipo: "Abierto",
+      personaObjetivo: "Cassian",
+    ),
+    ContratoModel(
+      estado: "Pendiente",
+      monto: 15000,
+      tipo: "Abierto",
+      personaObjetivo: "Cassian",
+    ),
   ];
 }

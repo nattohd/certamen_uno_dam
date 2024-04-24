@@ -34,7 +34,8 @@ List<AsesinoModel> listaAsesinos = [
     residencia: 'Unknown',
     edad: 50,
     cantAsesinatos: 300,
-    imgUrl: 'https://example.com/caine.jpg',
+    imgUrl:
+        'https://static.wikia.nocookie.net/john-wick8561/images/a/ad/F1CED30A-A0A7-4761-9D0C-8D94BC80313A.jpeg/revision/latest?cb=20230215152300',
     alias: ["The Shadow", "Silent Killer", "Ghost Whisperer"],
     genero: 'masculino',
     nacionalidad: ['Unknown'],
