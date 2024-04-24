@@ -21,9 +21,7 @@ class _AsesinoProfileState extends State<AsesinoProfile> {
     Size size = MediaQuery.of(context).size;
     AsesinoModel asesino = listaAsesinos[0];
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color(0xff2D3E50),
-      ),
+      appBar: AppBar(),
       drawer: SideMenu(),
       body: Container(
         height: size.height,
@@ -149,7 +147,7 @@ class ContainerSuperior extends StatelessWidget {
     return Container(
       height: size.height * 0.4,
       width: double.infinity,
-      color: Color(0xff2D3E50),
+      color: Color.fromARGB(255, 108, 4, 139),
       child: Column(
         children: [
           Spacer(),
