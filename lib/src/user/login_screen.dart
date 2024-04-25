@@ -2,6 +2,7 @@ import 'package:certamen_uno_dam/provider/user_provider.dart';
 import 'package:certamen_uno_dam/src/user/widgets/decoration_login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -65,6 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ElevatedButton(
                 onPressed: () {
                   context.read<UserProvider>().changeLogin(newState: true);
+                  context.go('/profile');
                 },
                 child: Text('Login')),
             Spacer(),

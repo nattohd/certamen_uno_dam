@@ -4,12 +4,13 @@ import 'package:certamen_uno_dam/src/contratos/ui/contratos_screen.dart';
 import 'package:certamen_uno_dam/src/hoteles/ui/hoteles_screen.dart';
 import 'package:certamen_uno_dam/src/servicios/ui/servicios_screen.dart';
 import 'package:certamen_uno_dam/src/user/base_page.dart';
+import 'package:certamen_uno_dam/src/user/login_screen.dart';
 import 'package:go_router/go_router.dart';
 
 final appRouter = GoRouter(routes: [
   GoRoute(
     path: '/',
-    builder: (context, state) => const BasePage(),
+    builder: (context, state) => BasePage(),
   ),
   GoRoute(
     path: '/profile',
@@ -30,5 +31,9 @@ final appRouter = GoRouter(routes: [
   GoRoute(
     path: '/asesinos',
     builder: (context, state) => AsesinosScreen(),
+  ),
+  GoRoute(
+    path: '/login',
+    builder: (context, state) => LoginScreen(),
   ),
 ]);

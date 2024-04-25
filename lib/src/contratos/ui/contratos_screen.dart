@@ -30,8 +30,8 @@ class _ContratosScreenState extends State<ContratosScreen> {
                 return InkWell(
                   onTap: () {},
                   child: Card(
-                    elevation: 4, // Elevación de la tarjeta
-                    margin: EdgeInsets.all(8), // Margen alrededor de la tarjeta
+                    elevation: 4,
+                    margin: EdgeInsets.all(8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -43,8 +43,7 @@ class _ContratosScreenState extends State<ContratosScreen> {
                           style: TextStyle(
                               fontSize: 18, fontWeight: FontWeight.bold),
                         ),
-                        SizedBox(
-                            height: 8), // Espacio entre el texto y el subtítulo
+                        SizedBox(height: 8),
                         Text(
                           contrato.monto.toString(),
                           style: TextStyle(fontSize: 14, color: Colors.grey),
@@ -81,11 +80,9 @@ class _ContratosScreenState extends State<ContratosScreen> {
               padding: const EdgeInsets.all(8.0),
               child: Center(
                 child: SizedBox(
-                  width: 200, // Ancho deseado para el botón
+                  width: 200,
                   child: ElevatedButton(
-                    onPressed: () {
-                      // Acción al presionar el botón
-                    },
+                    onPressed: () {},
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [

@@ -16,10 +16,14 @@ class AppTheme {
             backgroundColor: kappBarColor,
             titleTextStyle: TextStyle(
                 color: kfontColor, fontWeight: FontWeight.bold, fontSize: 22)),
+        textTheme: TextTheme(
+            bodyLarge: TextStyle(fontSize: 25),
+            bodyMedium: TextStyle(fontSize: 25),
+            bodySmall: TextStyle(fontSize: 25)),
         listTileTheme: ListTileThemeData(
             visualDensity: VisualDensity(vertical: -4),
             contentPadding: EdgeInsets.all(1),
-            titleTextStyle: TextStyle(fontSize: 12, color: Colors.black)),
+            titleTextStyle: TextStyle(fontSize: 25, color: Colors.black)),
         scaffoldBackgroundColor: kbackgroundColor);
   }
 }

@@ -27,7 +27,7 @@ class _HotelesScreenState extends State<HotelesScreen> {
         ),
         body: GridView.builder(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2, // Cambia este valor según sea necesario
+            crossAxisCount: 2,
             crossAxisSpacing: 10,
             mainAxisSpacing: 25,
           ),
@@ -68,9 +68,10 @@ class HotelCard extends StatelessWidget {
                   Text(
                     hotel.nombre,
                     style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        overflow: TextOverflow.ellipsis),
                   ),
                   SizedBox(height: 4),
                   Row(
@@ -78,11 +79,16 @@ class HotelCard extends StatelessWidget {
                       Text(
                         'Manager: ',
                         style: TextStyle(
-                            color: Colors.white, fontWeight: FontWeight.bold),
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18),
                       ),
-                      Text(
-                        '${hotel.manager}',
-                        style: TextStyle(color: Colors.white),
+                      Expanded(
+                        child: Text(
+                          '${hotel.manager}',
+                          style: TextStyle(color: Colors.white, fontSize: 18),
+                          overflow: TextOverflow.ellipsis,
+                        ),
                       ),
                     ],
                   ),
@@ -91,12 +97,14 @@ class HotelCard extends StatelessWidget {
                       Text(
                         'Ubicación: ',
                         style: TextStyle(
-                            color: Colors.white, fontWeight: FontWeight.bold),
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18),
                       ),
                       Expanded(
                         child: Text(
                           '${hotel.ubicacion}',
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white, fontSize: 18),
                           overflow: TextOverflow.ellipsis,
                         ),
                       ),

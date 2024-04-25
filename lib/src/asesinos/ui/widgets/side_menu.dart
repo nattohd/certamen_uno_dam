@@ -121,6 +121,7 @@ class _SideMenuState extends State<SideMenu> {
                   onTap: () {
                     setState(() {
                       context.read<UserProvider>().changeLogin(newState: false);
+                      context.go('/login');
                     });
                   },
                   title: Text("Cerrar Sesion"),
